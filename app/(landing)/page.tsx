@@ -68,15 +68,28 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full px-3 bg-mountains-pattern bg-conver bg-center h-screen bg-to text-center font-bold text-lg">
-        <blockquote className="max-w-[988px] mx-auto mt-[200px]">
-          &laquo;Estudiar, es, como enfrentarse a la ascensión de los picos más
-          altos. En el aula se intenta proporcionar al estudiante las rutas,
-          cuerdas e instrumental necesario para alcanzar la cima, pero tendrá
-          que ser él quien camine y trepe. El esfuerzo no debería desanimarnos
-          si consideramos la excepcionalidad del premio que nos aguarda al final
-          del recorrido.&raquo;
-        </blockquote>
+
+      <div
+        className="w-full bg-center bg-cover"
+        style={{ backgroundImage: "url(pattern.svg" }}
+      >
+        <div className="flex items-center justify-center w-full h-full py-12">
+          <div className="text-center">
+            <div className="container px-4 mx-auto">
+              <div className="max-w-4xl mx-auto text-center">
+                <blockquote className="py-10 text-2xl">
+                  &laquo;Estudiar, es, como enfrentarse a la ascensión de los
+                  picos más altos. En el aula se intenta proporcionar al
+                  estudiante las rutas, cuerdas e instrumental necesario para
+                  alcanzar la cima, pero tendrá que ser él quien camine y trepe.
+                  El esfuerzo no debería desanimarnos si consideramos la
+                  excepcionalidad del premio que nos aguarda al final del
+                  recorrido.&raquo;
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

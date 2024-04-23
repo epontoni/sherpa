@@ -18,9 +18,13 @@ export default function Typewriter({ words, className }: Props) {
     // chekc if text isn't finished yet
     if (i < text.length) {
       console.log("TEXT: ", text);
-      // add next character to span
-      textRef.current!.innerHTML =
+
+      if (textRef.current != null) {
+        // 👉️ TypeScript knows that ref is not null here
+        // add next character to span
+        textRef.current!.innerHTML =
         text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
+      }
 
       // wait for a while and call this function again for next character
       setTimeout(function () {
